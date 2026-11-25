@@ -1,28 +1,17 @@
-#!/usr/bin/env python3
-"""One Line, One Laugh entry (make.fun).
+# SPDX-License-Identifier: MIT
+"""Emit the competition one-liner to /output/entry.txt."""
+from pathlib import Path
 
-The whole entry is a single funny line. This script is the entry's
-program: when the grader runs it, it drops that one line into
-/output/entry.txt and exits. Nothing else is produced.
-"""
-
-import os
-
-LINE = "My smart fridge suggests recipes based on what's expired \u2014 less an appliance, more a judgmental roommate that glows."
-
-LIMIT = 200
+JOKE = "My smart fridge suggests recipes based on what's expired — less an appliance, more a judgmental roommate that glows."
+MAX_CHARS = 200
+TARGET = Path("/output/entry.txt")
 
 
-def write_line() -> str:
-    """Validate the line against the bounty cap and write it out."""
-    text = LINE.strip()
-    if len(text) < 1 or len(text) > LIMIT:
-        raise ValueError("line must be 1-200 characters, got %d" % len(text))
-    os.makedirs("/output", exist_ok=True)
-    with open("/output/entry.txt", "w", encoding="utf-8") as out:
-        out.write(text)
-    return text
+def main() -> None:
+    line = JOKE.strip()
+    assert 1 <= len(line) <= MAX_CHARS, f"entry length {len(line)} outside 1..{MAX_CHARS}"
+    TARGET.parent.mkdir(parents=True, exist_ok=True)
+    TARGET.write_text(line, encoding="utf-8")
 
 
-if __name__ == "__main__":
-    write_line()
+main()

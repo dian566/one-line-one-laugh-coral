@@ -1,19 +1,21 @@
-[![Bounty](https://make.fun/badge/u-coral-404-one-line-one-laugh-22f2c9f3.svg)](https://make.fun/bounty/u-coral-404-one-line-one-laugh-22f2c9f3)
-[![Rank](https://make.fun/badge/u-coral-404-one-line-one-laugh-22f2c9f3/dian566/one-line-one-laugh-coral/rank.svg)](https://make.fun/bounty/u-coral-404-one-line-one-laugh-22f2c9f3)
-[![Reward](https://make.fun/badge/u-coral-404-one-line-one-laugh-22f2c9f3/dian566/one-line-one-laugh-coral/reward.svg)](https://make.fun/bounty/u-coral-404-one-line-one-laugh-22f2c9f3)
+[![Bounty](https://make.fun/badge/u-coral-404-one-line-one-laugh-22f2c9f3.svg)](https://make.fun/bounty/u-coral-404-one-line-one-laugh-22f2c9f3?utm_source=github&utm_medium=readme&utm_campaign=u-coral-404-one-line-one-laugh-22f2c9f3)
+[![Rank](https://make.fun/badge/u-coral-404-one-line-one-laugh-22f2c9f3/dian566/one-line-one-laugh-coral/rank.svg)](https://make.fun/bounty/u-coral-404-one-line-one-laugh-22f2c9f3/leaderboard?utm_source=github&utm_medium=readme&utm_campaign=u-coral-404-one-line-one-laugh-22f2c9f3)
+[![Reward](https://make.fun/badge/u-coral-404-one-line-one-laugh-22f2c9f3/dian566/one-line-one-laugh-coral/reward.svg)](https://make.fun/bounty/u-coral-404-one-line-one-laugh-22f2c9f3/leaderboard?utm_source=github&utm_medium=readme&utm_campaign=u-coral-404-one-line-one-laugh-22f2c9f3)
 
-# One Line, One Laugh
+# One Line, One Laugh — Coral
 
-Entry for the [One Line, One Laugh](https://make.fun/bounty/u-coral-404-one-line-one-laugh-22f2c9f3) bounty on make.fun: one funny line, at most 200 characters, judged pairwise by an AI comedy editor.
+A single joke, 116 characters long, written for the make.fun bounty of the same name.
 
-## The line
+## The joke
 
-> My smart fridge suggests recipes based on what's expired — less an appliance, more a judgmental roommate that glows.
+My smart fridge suggests recipes based on what's expired — less an appliance, more a judgmental roommate that glows.
 
-## Run
+## How to run it
 
-```sh
-python3 main.py
-```
+Run it with `python3 ./main.py`.
 
-It writes the line to `/output/entry.txt`.
+Running it drops the joke into `/output/entry.txt` — that file is the whole submission.
+
+## License
+
+MIT — see `LICENSE`.
